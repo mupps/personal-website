@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../lib/config";
+import React from "react";
 
 const navItems = {
-  "/blog": { name: "Blog" },
+  // "/blog": { name: "Blog" },
+  "/": { name: "Home" },
+  "/about": { name: "About" },
   "/projects": { name: "Projects" },
-  "/photos": { name: "Photos" },
+  // "/photos": { name: "Photos" },
 };
 
 export function Navbar() {
