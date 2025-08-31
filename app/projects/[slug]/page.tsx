@@ -4,11 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-// interface Props {
-//   params: {
-//     slug: Promise<{slug: string}>;
-//   };
-// }
 interface PageProps {
   params: Promise<{ slug: string }>;
 }

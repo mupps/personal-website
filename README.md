@@ -50,11 +50,6 @@ The server will be running at [http://localhost:3000](http://localhost:3000).
 
 For more information about configuration, follow the instructions in the [Getting Started](https://nextfolio-template.vercel.app/blog/getting-started#configuration) post.
 
-## Contributing
-
-Contributions are welcome! To get involved, just push your code to the repo. Whether you're enhancing existing features or adding new ones, your efforts are greatly appreciated!
-
 ## Licence
 
-Nextfolio is open-source and released under the MIT License.
->>>>>>> d1e408f (Initial commit from Create Next App)
+This project is open-source and released under the MIT License.
