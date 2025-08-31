@@ -12,5 +12,5 @@ export const socialLinks = {
   github: "https://github.com/mupps",
   instagram: "https://www.instagram.com/",
   linkedin: "https://www.linkedin.com/in/amuppal18",
-  email: "mailto:amuppal@sas.upenn.edu",
+  email: "mailto:mupps@mupps.info",
 };
