@@ -2,7 +2,7 @@ export const metaData = {
   baseUrl: "https://mupps.info/",
   title: "mupps.info",
   name: "mupps",
-  ogImage: "/opengraph-image.png",
+  ogImage: "/pyramids.png",
   description:
     "My personal website where I write about my projects, experiences, and thoughts. Learn more about me and my work.",
 };
