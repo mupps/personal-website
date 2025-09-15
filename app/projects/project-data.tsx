@@ -29,8 +29,7 @@ export const projects: Project[] = [
       "User ratings and reviews",
       "Image upload and management"
     ],
-    // images: ["/projects/guava/main.png"],
-    githubUrl: "https://github.com/mupps",
+    githubUrl: "https://github.com/mupps/guava-marketplace-app",
   },
   {
     title: "FIFA Stats App",
@@ -38,7 +37,7 @@ export const projects: Project[] = [
     year: 2021,
     description: "Comparing game and player stats in FIFA 2017 VS 2022",
     longDescription: "An interactive web application that visualizes and compares player statistics between FIFA 2017 and FIFA 2022. Features detailed analytics, player comparisons, and trend analysis between the two datasets.",
-    url: "https://github.com/mupps",
+    url: "https://github.com/mupps/fifa-stats-app",
     technologies: ["React", "Recharts", "D3.js", "Python", "pandas", "MySQL", "MongoDB"],
     features: [
       "MySQL database populated from FIFA 2017 and 2022 datasets using Pandas",
@@ -47,7 +46,7 @@ export const projects: Project[] = [
       "Player stat comparisons and trend analysis",
       "RESTful API endpoints for data retrieval"
     ],
-    githubUrl: "https://github.com/mupps",
+    githubUrl: "https://github.com/mupps/fifa-stats-app",
     youtubeUrl: "https://www.youtube.com/watch?v=AmsKZljD1Eo"
   },
   {
