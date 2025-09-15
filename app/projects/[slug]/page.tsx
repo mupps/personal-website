@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { YouTubeComponent } from "../../components/youtube";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -32,6 +33,12 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <article className="max-w-3xl mx-auto">
+      <Link
+        href="/projects"
+        className="inline-block mb-6 text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200"
+      >
+        ← Back to Projects
+      </Link>
       {/* Header */}
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
@@ -75,6 +82,15 @@ export default async function ProjectPage({ params }: PageProps) {
         </div>
       )}
 
+      {/* Project Video */}
+      {project.youtubeUrl && (
+        <div className="mb-8">
+          <YouTubeComponent
+            videoId={project.youtubeUrl.split('v=')[1]?.split('&')[0]}
+          />
+        </div>
+      )}
+
       {/* Project Details */}
       <div className="prose prose-neutral dark:prose-invert max-w-none">
         {/* Overview */}
@@ -109,16 +125,6 @@ export default async function ProjectPage({ params }: PageProps) {
             ))}
           </ul>
         </section>
-      </div>
-
-      {/* Back Link */}
-      <div className="mt-12 mb-8">
-        <Link
-          href="/projects"
-          className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200"
-        >
-          ← Back to Projects
-        </Link>
       </div>
     </article>
   );

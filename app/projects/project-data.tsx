@@ -10,6 +10,7 @@ export interface Project {
   images?: string[];
   githubUrl?: string;
   liveUrl?: string;
+  youtubeUrl?: string;
 }
 
 export const projects: Project[] = [
@@ -30,7 +31,6 @@ export const projects: Project[] = [
     ],
     // images: ["/projects/guava/main.png"],
     githubUrl: "https://github.com/mupps",
-    // liveUrl: "https://guava-marketplace.com"
   },
   {
     title: "FIFA Stats App",
@@ -47,8 +47,8 @@ export const projects: Project[] = [
       "Player stat comparisons and trend analysis",
       "RESTful API endpoints for data retrieval"
     ],
-    // images: ["/projects/fifa/dashboard.png"],
-    githubUrl: "https://github.com/mupps"
+    githubUrl: "https://github.com/mupps",
+    youtubeUrl: "https://www.youtube.com/watch?v=AmsKZljD1Eo"
   },
   {
     title: "PennBook",

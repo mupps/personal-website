@@ -42,8 +42,8 @@ export default function AboutPage() {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Beyond Programming...</h2>
           <p className="mb-6">
-            When I'm not coding, you can often find me searching for my next TV series to binge watch or my next video game to dabble in.
-            Here is my library of what I've been consuming recently.
+            When I'm not coding, you can often find me searching for my next TV series to binge watch or my next video game to dabble in. Check out my
+            {" "}<a href="/library"><b>library</b></a> to see what I've been consuming recently and some of my all-time favorites.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Let's Connect!</h2>

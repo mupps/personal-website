@@ -10,7 +10,6 @@ export const metaData = {
 export const socialLinks = {
   twitter: "https://x.com/itsmupps",
   github: "https://github.com/mupps",
-  instagram: "https://www.instagram.com/",
   linkedin: "https://www.linkedin.com/in/amuppal18",
   email: "mailto:mupps@mupps.info",
 };

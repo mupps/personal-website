@@ -9,7 +9,7 @@ export interface WorkExperience {
 
 export const workExperiences: WorkExperience[] = [
   {
-    title: "Lead Software Engineer",
+    title: "Full Stack Software Engineer",
     company: "GoGo Medical Transport",
     period: "2023-Present",
     description: "Led development of scalable portal for case managers using MERN stack. Implementing CI/CD pipelines and improving system performance.",
@@ -39,7 +39,7 @@ export const workExperiences: WorkExperience[] = [
     period: "2019",
     description: "Worked with Prof. Steve Zdancewic on the Verified LLVM (Vellvm) project to advance program reasoning techniques within the project.",
     achievements: [
-      "Collaborated with team of PHD and Masters students weekly to discuss project progress and challenges",
+      "Collaborated with team of PhD and Masters students weekly to discuss project progress and challenges",
       "Designed and implemented OCaml test cases to validate LLVM intermediate representations and transformations",
       "Enhanced framework reliability, strengthening program analysis tools within Penn Engineering"
     ],

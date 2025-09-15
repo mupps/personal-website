@@ -1,4 +1,4 @@
-# Personal Website
+# mupps.info - Personal Website
 
 A clean, fast, and lightweight portfolio website built with [Next.js](https://nextjs.org/), [Vercel](https://vercel.com/), and [Tailwind CSS](https://tailwindcss.com/). Adapted from the Nextfolio template project.
 
@@ -11,13 +11,10 @@ A clean, fast, and lightweight portfolio website built with [Next.js](https://ne
 
 ## Features
 
-- **[MDX](https://mdxjs.com/) Support**: Use Markdown with JSX components for blog posts.
 - **Light and Dark Mode Toggle**: Switch between themes for better readability.
-- **Dynamic [OG Images](https://vercel.com/docs/functions/og-image-generation)**: Auto-generate Open Graph images for sharing.
-- **SEO Optimization**: Enhance search visibility with sitemap, robots.txt, and JSON-LD schema.
-- **Interactive Embeds**: Easily embed interactive tweets and YouTube videos.
-- **Captions**: Add descriptive captions to photos, tweets, and videos.
-- **Image Grid**: Easily showcase image galleries or photos.
+- **Dynamic [OG Images](https://vercel.com/docs/functions/og-image-generation)**: Auto-generated Open Graph images for sharing.
+- **SEO Optimization**: Enhanced search visibility with sitemap, robots.txt, and JSON-LD schema.
+- **Interactive Embeds**: Nicely embeded YouTube videos.
 
 To start the development server:
 
@@ -26,13 +23,6 @@ pnpm dev
 ```
 
 The server will be running at [http://localhost:3000](http://localhost:3000).
-
-## Configuration
-
-1. Update the site metadata and social links in `app/lib/config.ts` to set up SEO, feeds, social links, and Open Graph settings.
-2. Update your routes in `app/sitemap.ts` for SEO optimization.
-
-For more information about configuration, follow the instructions in the [Getting Started](https://nextfolio-template.vercel.app/blog/getting-started#configuration) post.
 
 ## Licence
 
