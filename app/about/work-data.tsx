@@ -9,17 +9,17 @@ export interface WorkExperience {
 
 export const workExperiences: WorkExperience[] = [
   {
-    title: "Full Stack Software Engineer",
+    title: "Full-Stack Software Engineer",
     company: "GoGo Medical Transport",
     period: "2023-Present",
-    description: "Led development of scalable portal for case managers using MERN stack. Implementing CI/CD pipelines and improving system performance.",
+    description: "Led development of ride-request portal for case managers. Translating HIPAA requirements into secure, user-friendly features.",
     achievements: [
-      "Developed a comprehensive MERN portal enabling case managers to efficiently request transportation rides online",
-      "Applied JWT authentication for secure user access and a live updating ride queue for real-time trip info",
-      "Integrated with the MediRoutes API to streamline ride information delivery to the dispatch team",
-      "Enhanced scheduling efficiency and reduced wait times for ride requests"
+      "Built a HIPAA-compliant full-stack platform handling 10K+ monthly ride requests",
+      "Implemented RBAC, secure APIs, audit logging, and real-time workflows with Django REST + WebSockets",
+      "Shipped a React/TypeScript dashboard with <250ms P95 operational updates",
+      "Automated CI/CD and deployed on Docker + EKS for 99.9% uptime and 50% lower cloud costs."
     ],
-    technologies: ["React", "Node.js", "Express", "Tailwind", "Docker", "MongoDB"]
+    technologies: ["React", "TypeScript", "Python", "Django", "PostgreSQL", "Docker", "Kubernetes", "AWS"]
   },
   {
     title: "Software Engineer Intern",
@@ -28,10 +28,10 @@ export const workExperiences: WorkExperience[] = [
     description: "Developed and maintained multiple client-facing applications. Worked closely with design team to implement responsive UI/UX solutions.",
     achievements: [
       "Collaborated with a dynamic team to develop a political-themed binary puzzle game, enhancing user engagement",
-      "Designed and implemented a secure login system using JWT authentication with e-mail signup",
+      "Designed and implemented a secure login system using JWT authentication with e-mail signup in Go/React",
       "Deployed web services on AWS EC2 and Route53, ensuring high availability and scalability of the application"
     ],
-    technologies: ["React", "Express", "MongoDB", "Angular", "AWS"]
+    technologies: ["React", "Express", "MongoDB", "Angular", "Go", "AWS"]
   },
   {
     title: "Computer Science Research Assistant",
@@ -44,5 +44,16 @@ export const workExperiences: WorkExperience[] = [
       "Enhanced framework reliability, strengthening program analysis tools within Penn Engineering"
     ],
     technologies: ["OCaml", "Git", "CLI", "Linux/Unix", "Emacs"]
+  },
+  {
+    title: "Machine Learning Researach Intern",
+    company: "VerifAI",
+    period: "2017",
+    description: "Developed a function to decode verbal inputs into key parameters in the InZone mobile app to create voice commands using Python and Natural Language Tool Kit (NLTK) library.",
+    achievements: [
+      "Developed a function to decode verbal inputs into key parameters in the InZone mobile app using NLTK",
+      "Constructed research report comparing InZone voice commands versus competitor apps such as SnapChat",
+    ],
+    technologies: ["Python", "NLTK", "Jupyter Notebooks"]
   }
 ];

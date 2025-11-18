@@ -15,12 +15,45 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "LeetCoach",
+    slug: "leetcoach",
+    year: 2025,
+    description: "AI-powered LeetCode coaching platform with real-time assistance from Claude AI",
+    longDescription: "LeetCoach provides an interactive coding environment where you can solve algorithmic problems with guidance from Claude 4.5 Sonnet. Get hints, explanations, code reviews, and complete solutions as you learn.",
+    url: "https://github.com/mupps/leetcoach",
+    technologies: ["Python", "TypeScript", "Next.js", "FastAPI", "LangChain", "Claude API", "Supabase", "Docker"],
+    features: [
+      "Built an AI coding coach with Claude 4.5 + LangChain to generate adaptive problems and hints in real time",
+      "Loaded LeetCode problems and user code into context for personalized assistance",
+      "Secure sandboxed code execution environment with resource limits using Docker containers",
+      "Implemented user authentication, progress tracking, and analytics with Supabase cloud services",
+      "Async and await with FastAPI backend for handling real-time AI interactions and code execution requests"
+    ],
+    githubUrl: "https://github.com/mupps/leetcoach",
+  },
+    {
+    title: "OpenSea Explorer Bot",
+    slug: "opensea-explorer",
+    year: 2023,
+    description: "A Discord bot that provides real-time ETH network updates via web scraping and webhooks",
+    longDescription: "A Discord bot that provides real-time updates on OpenSea NFT project floor prices, tracks ETH wallet activity, and converts currencies. An exploration into web scraping, Discord bot development, and real-time data delivery.",
+    url: "https://github.com/mupps/opensea-explorer-bot",
+    technologies: ["Python", "BeautifulSoup", "JavaScript", "Discord API", "MongoDB"],
+    features: [
+      "Information provided directly into Discord channels via bot commands",
+      "Web scraping via Puppeteer/BeautifulSoup for OpenSea floor price tracking",
+      "Developed wallet tracker feature using Cron jobs for updates",
+      "Hosted locally with proxies using Raspberry Pi to 10+ discord communities when active"
+    ],
+    githubUrl: "https://github.com/mupps/guava-marketplace-app",
+  },
+  {
     title: "Guava",
     slug: "guava",
     year: 2022,
     description: "Marketplace app for buying and selling products with real-time chat",
     longDescription: "A full-featured marketplace application that enables users to buy and sell products. Built with modern web technologies (MERN) and focused on providing a seamless user experience with real-time updates.",
-    url: "https://github.com/mupps",
+    url: "https://github.com/mupps/guava-marketplace-app",
     technologies: ["React", "React Native", "Node.js", "MongoDB", "JWT", "Socket.IO"],
     features: [
       "Secure login and registration with JWT",
