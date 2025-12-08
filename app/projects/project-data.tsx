@@ -31,13 +31,13 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/mupps/leetcoach",
   },
-    {
+  {
     title: "OpenSea Explorer Bot",
     slug: "opensea-explorer",
     year: 2023,
     description: "A Discord bot that provides real-time ETH network updates via web scraping and webhooks",
     longDescription: "A Discord bot that provides real-time updates on OpenSea NFT project floor prices, tracks ETH wallet activity, and converts currencies. An exploration into web scraping, Discord bot development, and real-time data delivery.",
-    url: "https://github.com/mupps/opensea-explorer-bot",
+    url: "https://github.com/mupps/opensea-explorer-rewritet",
     technologies: ["Python", "BeautifulSoup", "JavaScript", "Discord API", "MongoDB"],
     features: [
       "Information provided directly into Discord channels via bot commands",
@@ -45,7 +45,7 @@ export const projects: Project[] = [
       "Developed wallet tracker feature using Cron jobs for updates",
       "Hosted locally with proxies using Raspberry Pi to 10+ discord communities when active"
     ],
-    githubUrl: "https://github.com/mupps/guava-marketplace-app",
+    githubUrl: "https://github.com/mupps/opensea-explorer-rewrite",
   },
   {
     title: "Guava",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     description: "Facebook-style social networking platform",
     longDescription: "A social networking platform with modern features like real-time chat, news integration, and social network visualization.",
     url: "https://github.com/mupps",
-    technologies: ["React", "Node.js", "Express", "AWS DynamoDB", "Socket.IO", "Redux" ],
+    technologies: ["React", "Node.js", "Express", "AWS DynamoDB", "Socket.IO", "Redux"],
     features: [
       "User authentication and profiles",
       "News feed with real-time updates",
