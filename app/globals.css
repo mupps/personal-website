@@ -19,11 +19,12 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
-  
+
   --bg-color: #ffffff;
   --text-primary: #171717;
   --text-secondary: #525252;
-  --accent-color: #6366f1; /* Indigo 500 */
+  --accent-color: #6366f1;
+  /* Indigo 500 */
 }
 
 /* Dark theme colors */
@@ -38,26 +39,43 @@
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
 
-  --bg-color: #0f172a; /* Slate 900 */
+  --bg-color: #0f172a;
+  /* Slate 900 */
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
-  --accent-color: #818cf8; /* Indigo 400 */
+  --accent-color: #818cf8;
+  /* Indigo 400 */
   background-color: var(--bg-color);
 }
 
 body {
+  background-color: transparent;
+  width: 100%;
+}
+
+:root {
+  /* ... vars ... */
   background-color: var(--bg-color);
   background-image: radial-gradient(var(--text-secondary) 1px, transparent 1px);
   background-size: 32px 32px;
   background-attachment: fixed;
-  opacity: 1;
 }
 
-.dark body {
+/* Dark theme colors */
+.dark {
+  /* ... vars ... */
+  background-color: var(--bg-color);
   background-image: radial-gradient(#334155 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-outfit), sans-serif;
 }
 
@@ -67,10 +85,18 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transform: translateY(20px);
   }
-  
-  .delay-100 { animation-delay: 100ms; }
-  .delay-200 { animation-delay: 200ms; }
-  .delay-300 { animation-delay: 300ms; }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
 }
 
 @keyframes fadeInUp {
@@ -78,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -118,7 +145,7 @@ html {
   content: "#";
 }
 
-.prose *:hover > .anchor {
+.prose *:hover>.anchor {
   @apply visible;
 }
 
@@ -157,7 +184,7 @@ h6 {
   @apply font-medium;
 }
 
-.prose > :first-child {
+.prose> :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em;
   margin-bottom: 1.25em;
@@ -173,8 +200,10 @@ pre::-webkit-scrollbar {
 }
 
 pre {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Remove Safari input shadow on mobile */
@@ -192,7 +221,7 @@ table {
   white-space: nowrap;
 }
 
-.prose .callout > p {
+.prose .callout>p {
   margin: 0;
 }
 
