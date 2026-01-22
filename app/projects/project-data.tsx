@@ -32,12 +32,12 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/mupps/leetcoach",
   },
   {
-    title: "OpenSea Explorer Bot",
+    title: "NFT Market Monitoring Bot",
     slug: "opensea-explorer",
     year: 2023,
     description: "A Discord bot that provides real-time ETH network updates via web scraping and webhooks",
     longDescription: "A Discord bot that provides real-time updates on OpenSea NFT project floor prices, tracks ETH wallet activity, and converts currencies. An exploration into web scraping, Discord bot development, and real-time data delivery.",
-    url: "https://github.com/mupps/opensea-explorer-rewritet",
+    url: "https://github.com/mupps/opensea-explorer-rewrite",
     technologies: ["Python", "BeautifulSoup", "JavaScript", "Discord API", "MongoDB"],
     features: [
       "Information provided directly into Discord channels via bot commands",
@@ -46,6 +46,7 @@ export const projects: Project[] = [
       "Hosted locally with proxies using Raspberry Pi to 10+ discord communities when active"
     ],
     githubUrl: "https://github.com/mupps/opensea-explorer-rewrite",
+    images: ["/library/projects/nftbot.png"]
   },
   {
     title: "Guava",

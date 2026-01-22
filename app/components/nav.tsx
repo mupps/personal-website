@@ -25,7 +25,7 @@ export function Navbar() {
             <Link
               key={path}
               href={path}
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
+              className="relative px-2 py-1 text-sm font-medium transition-colors hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)]"
             >
               {name}
             </Link>

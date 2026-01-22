@@ -19,11 +19,15 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+  
+  --bg-color: #ffffff;
+  --text-primary: #171717;
+  --text-secondary: #525252;
+  --accent-color: #6366f1; /* Indigo 500 */
 }
 
 /* Dark theme colors */
 .dark {
-  background-color: #111010;
   --sh-class: #4c97f8;
   --sh-identifier: white;
   --sh-sign: #8996a3;
@@ -33,6 +37,51 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+
+  --bg-color: #0f172a; /* Slate 900 */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-color: #818cf8; /* Indigo 400 */
+  background-color: var(--bg-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: radial-gradient(var(--text-secondary) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+.dark body {
+  background-image: radial-gradient(#334155 1px, transparent 1px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 html {

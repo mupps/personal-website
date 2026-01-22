@@ -18,20 +18,20 @@ export const libraryItems: MediaItem[] = [
     thoughts: "MMORPG with good top-down combat and a lot of content. Fun when new content is released."
   },
   {
-    title: "My Hero Academia",
-    type: "show",
-    status: "current",
-    coverImage: "/library/shows/my-hero.jpg",
-    startDate: "2025-08",
-    thoughts: "I don't watch a lot of anime, but I've really been enjoying this one."
-  },
-  {
     title: "Teamfight Tactics",
     type: "game",
     status: "current",
     coverImage: "/library/games/teamfight-tactics.jpg",
     startDate: "2019-06",
-    thoughts: "I don't play every season, but I love the strategies and analytics that come with playing it."
+    thoughts: "I love the strategies and analytics that come with playing it, lots of numbers and thinking."
+  },
+  {
+    title: "My Hero Academia",
+    type: "show",
+    status: "completed",
+    coverImage: "/library/shows/my-hero.jpg",
+    startDate: "2025-08",
+    thoughts: "I don't watch a lot of anime, but I've really been enjoying the fight scenes in this show."
   },
   {
     title: "Bojack Horseman",

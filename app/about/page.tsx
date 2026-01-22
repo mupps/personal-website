@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <section className="max-w-3xl mx-auto">
+    <section>
       <div className="mb-12">
         <Image
           src="/profile.png"
@@ -38,7 +38,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold mt-8 mb-4">Professional Journey</h2>
           <p className="mb-6">
             With several years of experience in software development, I've worked on a diverse range of projects
-            from political campaigns to healthcare startups. I'm particularly experienced in building user-friendly, 
+            from political campaigns to healthcare startups. I'm particularly experienced in building user-friendly,
             efficient, and scalable web applications through microservices and cloud providers.
           </p>
           <p className="mb-6">
@@ -59,7 +59,7 @@ export default function AboutPage() {
             whether it be professional or personal. You can reach me at {socialLinks.email.slice(7) + " "}
             or through any of these platforms as well:
           </p>
-          
+
           <div className="flex gap-4 mt-6">
             <a
               href={socialLinks.github}
