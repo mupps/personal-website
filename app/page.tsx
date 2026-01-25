@@ -2,6 +2,7 @@ import Image from "next/image";
 import { socialLinks } from "./lib/config";
 import React from "react";
 import { FadeIn } from "./components/fade-in";
+import { Typewriter } from "./components/typewriter";
 
 export default function Page() {
   return (
@@ -9,12 +10,11 @@ export default function Page() {
       <FadeIn>
         <div className="flex flex-col-reverse sm:flex-row items-start sm:items-center justify-between gap-8 mb-12">
           <div className="flex-1">
-            <h1 className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 mb-4">
-              Greetings! I'm Armaan.
+            <h1 className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 mb-4 h-[1.5em] min-h-[40px]">
+              <Typewriter text="Greetings! I'm Armaan." speed={70} />
             </h1>
             <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              Thanks for stopping by! It's a work in progress, but this is where I try to
-              organize and centralize my thoughts, projects, work, and ideas.
+              I'm a software engineer based in Los Angeles, California! I specialize in building full-stack web applications, with a focus on turning ideas into production-grade systems.
             </p>
           </div>
           <a href={socialLinks.linkedin} target="_blank" className="shrink-0 transition-transform hover:scale-105 duration-300">
@@ -46,7 +46,7 @@ export default function Page() {
             >
               projects
             </a>
-            ! {" "}🤖
+            {" "}or <a href={socialLinks.medium} target="_blank">posts</a> on Medium! {" "} 🤖
           </p>
         </div>
       </FadeIn>

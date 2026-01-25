@@ -4,6 +4,7 @@ import React from "react";
 import {
   FaGithub,
   FaLinkedinIn,
+  FaMedium,
 } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 import { metaData, socialLinks } from "../lib/config";
@@ -23,6 +24,7 @@ function SocialLinks() {
     <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
       <SocialLink href={socialLinks.github} icon={FaGithub} />
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
+      <SocialLink href={socialLinks.medium} icon={FaMedium} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
       {/* <a href="/rss.xml" target="_self">
         <FaRss />

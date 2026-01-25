@@ -11,5 +11,6 @@ export const socialLinks = {
   twitter: "https://x.com/itsmupps",
   github: "https://github.com/mupps",
   linkedin: "https://www.linkedin.com/in/amuppal18",
+  medium: "https://medium.com/@mupps",
   email: "mailto:mupps@mupps.info",
 };
