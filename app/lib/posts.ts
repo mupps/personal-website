@@ -51,7 +51,11 @@ function getMDXData(dir: string) {
 }
 
 export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), "content"));
+  const contentPath = path.join(process.cwd(), "content");
+  if (!fs.existsSync(contentPath)) {
+    return [];
+  }
+  return getMDXData(contentPath);
 }
 
 export function formatDate(date: string, includeRelative = false) {
