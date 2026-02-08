@@ -15,6 +15,21 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Tennis Court Auto Booking Bot",
+    slug: "tennis-court-aco-bot",
+    year: 2026,
+    description: "A web app that checks tennis court availability on PlayByPoint and displays open booking slots",
+    longDescription: "An automation bot that checks tennis court availability on PlayByPoint and displays open booking slots, allowing faster bookings and better chances of securing a court.",
+    url: "https://github.com/mupps/playbypoint-aco",
+    technologies: ["TypeScript", "React", "Bun", "Tailwind CSS"],
+    features: [
+      "Utilizes PlayWright for web scraping and automation to scrape friends and court availability",
+      "Booking slots displayed in a user-friendly interface with real-time updates",
+      "Built with Bun for fast bundling performance and efficient development",
+    ],
+    githubUrl: "https://github.com/mupps/playbypoint-aco",
+  },
+  {
     title: "LeetCoach",
     slug: "leetcoach",
     year: 2025,
@@ -98,7 +113,6 @@ export const projects: Project[] = [
       "Comment and reaction system",
       "Real-time chat functionality using Socket.IO",
     ],
-    // images: ["/projects/pennbook/feed.png"],
     githubUrl: "https://github.com/mupps"
   }
 ];
