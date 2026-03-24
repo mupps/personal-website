@@ -26,7 +26,7 @@ export default function AboutPage() {
         <h1 className="text-3xl font-bold mb-4">About Me</h1>
         <div className="prose prose-neutral dark:prose-invert max-w-none">
           <p className="text-lg mb-6">
-            Hi there! I'm {metaData.name}, better known as Armaan, a passionate technologist and tinkerer based in California.
+            Hi there! I'm {metaData.name}, better known as Armaan, a passionate technologist and tinkerer from southern California.
           </p>
           <p className="text-lg mb-6">
             I specialize in building modern full-stack web applications, with a focus on developing secure and reliable distributed systems.

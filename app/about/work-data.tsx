@@ -9,9 +9,20 @@ export interface WorkExperience {
 
 export const workExperiences: WorkExperience[] = [
   {
-    title: "Full-Stack Software Engineer",
+    title: "Software Engineer II",
+    company: "Shield AI",
+    period: "2026-Present",
+    description: "Developing next-generation Ground Control Station (GCS) applications for unmanned aerial systems (UAS).",
+    achievements: [
+      "Implementing responsive user interfaces with React and TypeScript for operator workflows and visualizing sensor feeds, spatial data, and mission state",
+      "Build high-performance client and server applications that support telemetry processing, mission planning, and real-time control",
+    ],
+    technologies: ["React", "TypeScript", "Python", "Docker"]
+  },
+  {
+    title: "Software Engineer",
     company: "GoGo Medical Transport",
-    period: "2023-Present",
+    period: "2023-2026",
     description: "Led development of ride-request portal for case managers. Translating HIPAA requirements into secure, user-friendly features.",
     achievements: [
       "Built a HIPAA-compliant full-stack platform handling 10K+ monthly ride requests",

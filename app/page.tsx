@@ -14,7 +14,7 @@ export default function Page() {
               <Typewriter text="Greetings! I'm Armaan." speed={70} />
             </h1>
             <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              I'm a software engineer based in Los Angeles, California! I specialize in building full-stack web applications, with a focus on turning ideas into production-grade systems.
+              I'm a software engineer currently based in Frisco, Texas! I specialize in building full-stack web applications, with a focus on turning ideas into production-grade systems.
             </p>
           </div>
           <a href={socialLinks.linkedin} target="_blank" className="shrink-0 transition-transform hover:scale-105 duration-300">
