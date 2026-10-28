@@ -1,17 +1,13 @@
-"use client";
-import YT from "react-youtube";
-
-export function YouTubeComponent(props: any) {
+export function YouTubeComponent({ videoId }: { videoId: string }) {
   return (
-    <div className="relative w-full h-0 pb-[56.25%] my-6">
-      <YT
-        opts={{
-          height: '100%',
-          width: '100%',
-        }}
-        {...props}
-        className="absolute top-0 left-0 w-full h-full"
-      />
-    </div>
+    <iframe
+      className="w-full aspect-video rounded-lg"
+      src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+      title="Project demonstration"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+    />
   );
 }

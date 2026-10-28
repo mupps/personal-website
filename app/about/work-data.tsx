@@ -57,7 +57,7 @@ export const workExperiences: WorkExperience[] = [
     technologies: ["OCaml", "Git", "CLI", "Linux/Unix", "Emacs"]
   },
   {
-    title: "Machine Learning Researach Intern",
+    title: "Machine Learning Research Intern",
     company: "VerifAI",
     period: "2017",
     description: "Developed a function to decode verbal inputs into key parameters in the InZone mobile app to create voice commands using Python and Natural Language Tool Kit (NLTK) library.",
