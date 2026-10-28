@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { metaData } from "./lib/config";
+import { projects } from "./projects/project-data";
 
 const BaseUrl = metaData.baseUrl.endsWith("/")
   ? metaData.baseUrl
@@ -11,5 +12,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date().toISOString().split("T")[0],
   }));
 
-  return [...routes];
+  return [
+    ...routes,
+    ...projects.map((project) => ({
+      url: `${BaseUrl}projects/${project.slug}`,
+    })),
+  ];
 }

@@ -9,7 +9,9 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug }: { slug: string } = await params;
   const project = projects.find((p) => p.slug === slug);
   if (!project) return { title: "Project Not Found" };
@@ -32,26 +34,21 @@ export default async function ProjectPage({ params }: PageProps) {
   if (!project) notFound();
 
   return (
-    <article>
-      <Link
-        href="/projects"
-        className="inline-block mb-6 text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200"
-      >
+    <article className="reading-page">
+      <Link href="/projects" className="inline-block mt-8 mb-8 text-link">
         ← Back to Projects
       </Link>
       {/* Header */}
       <header className="mb-8">
-        <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
-        <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-          {project.description}
-        </p>
+        <h1 className="mb-5">{project.title}</h1>
+        <p className="muted leading-relaxed mb-5">{project.description}</p>
         <div className="flex gap-4">
           {project.githubUrl && (
             <Link
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200"
+              className="text-link"
             >
               GitHub ↗
             </Link>
@@ -61,7 +58,7 @@ export default async function ProjectPage({ params }: PageProps) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200"
+              className="text-link"
             >
               Live Demo ↗
             </Link>
@@ -77,7 +74,8 @@ export default async function ProjectPage({ params }: PageProps) {
             alt={`${project.title} screenshot`}
             width={800}
             height={400}
-            className="w-full"
+            className="w-full h-auto"
+            sizes="(max-width: 728px) calc(100vw - 48px), 680px"
           />
         </div>
       )}
@@ -86,7 +84,7 @@ export default async function ProjectPage({ params }: PageProps) {
       {project.youtubeUrl && (
         <div className="mb-8">
           <YouTubeComponent
-            videoId={project.youtubeUrl.split('v=')[1]?.split('&')[0]}
+            videoId={project.youtubeUrl.split("v=")[1]?.split("&")[0]}
           />
         </div>
       )}
@@ -102,14 +100,9 @@ export default async function ProjectPage({ params }: PageProps) {
         {/* Technologies */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
-          <div className="flex flex-wrap gap-2">
+          <div className="tech-list not-prose">
             {project.technologies.map((tech, index) => (
-              <span
-                key={index}
-                className="px-3.5 py-1.5 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm"
-              >
-                {tech}
-              </span>
+              <span key={index}>{tech}</span>
             ))}
           </div>
         </section>
@@ -119,9 +112,7 @@ export default async function ProjectPage({ params }: PageProps) {
           <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
           <ul className="list-disc pl-5 space-y-2">
             {project.features.map((feature, index) => (
-              <li key={index} className="text-neutral-700 dark:text-neutral-300">
-                {feature}
-              </li>
+              <li key={index}>{feature}</li>
             ))}
           </ul>
         </section>

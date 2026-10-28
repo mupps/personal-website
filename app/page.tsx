@@ -1,55 +1,56 @@
 import Image from "next/image";
-import { socialLinks } from "./lib/config";
-import React from "react";
-import { FadeIn } from "./components/fade-in";
-import { Typewriter } from "./components/typewriter";
+import Link from "next/link";
+import { HeroBackdrop } from "./components/hero-backdrop";
+import { workExperiences } from "./about/work-data";
 
 export default function Page() {
+  const currentWork = workExperiences[0];
   return (
-    <section>
-      <FadeIn>
-        <div className="flex flex-col-reverse sm:flex-row items-start sm:items-center justify-between gap-8 mb-12">
-          <div className="flex-1">
-            <h1 className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 mb-4 h-[1.5em] min-h-[40px]">
-              <Typewriter text="Greetings! I'm Armaan." speed={70} />
-            </h1>
-            <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              I'm a software engineer currently based in Frisco, Texas! I specialize in building full-stack web applications, with a focus on turning ideas into production-grade systems.
-            </p>
+    <>
+      <section className="home-intro" aria-labelledby="intro-heading">
+        <HeroBackdrop />
+        <div className="intro-layout">
+          <div className="intro-content">
+            <div className="intro-heading">
+              <p className="eyebrow">Software Engineer · Frisco, Texas</p>
+              <h1 id="intro-heading">Hi, I’m Armaan</h1>
+            </div>
+            <div className="intro-copy">
+              <p>
+                I build full-stack applications for critical systems, and enjoy
+                turning ideas into things people can use.
+              </p>
+              <p>
+                Outside of work, I’m usually exploring a side project, finding a
+                new game, or looking for my next binge watch.
+              </p>
+              <Link href="/about" className="text-link">
+                More about me <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
-          <a href={socialLinks.linkedin} target="_blank" className="shrink-0 transition-transform hover:scale-105 duration-300">
-            <Image
-              src="/profile.png"
-              alt="Profile photo"
-              className="rounded-full bg-gray-100 grayscale-0 hover:grayscale transition-all duration-300 border-2 border-neutral-200 dark:border-neutral-800"
-              unoptimized
-              width={140}
-              height={140}
-              priority
-            />
-          </a>
+          <Image
+            src="/profile.png"
+            alt="Armaan"
+            className="profile-photo"
+            width={184}
+            height={230}
+            sizes="(max-width: 700px) 160px, 184px"
+            priority
+          />
         </div>
-        <div className="prose prose-neutral dark:prose-invert max-w-none delay-100">
-          <p>
-            You can find more about me and some of my work experiences{" "}
-            <a
-              href="/about"
-            >
-              here
-            </a>
-            .{" "}👋
+      </section>
+      <section className="current-work" aria-labelledby="currently-heading">
+        <h2 id="currently-heading" className="eyebrow">
+          Currently
+        </h2>
+        <div>
+          <p className="current-role">
+            {currentWork.title} at {currentWork.company}.
           </p>
-          <p>
-            Take a look at my some of my favorite {" "}
-            <a
-              href="/projects"
-            >
-              projects
-            </a>
-            {" "}or <a href={socialLinks.medium} target="_blank">posts</a> on Medium! {" "} 🤖
-          </p>
+          <p className="muted">{currentWork.description}</p>
         </div>
-      </FadeIn>
-    </section>
+      </section>
+    </>
   );
 }
